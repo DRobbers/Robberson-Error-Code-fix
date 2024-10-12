@@ -1,9 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Actor&family=Candal&display=swap');
+HTML5 display-role reset for older browsers 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+
+   ERROR 1 MOVED RESET BUTTON TO TOP OF CSS FOR EASIER REFERENCE.
+   MODIFIED THE * SELECTOR TO HTML, BODY TO ELIMINATE THE SLOW DOWN ON RENDERING
+   ERROR 3 IMPROVED THE CONTRAST THE SKIP TO MAIN FOCUS CONTENT BY ADDING AN OUTLINE.
+COMBINED THE 600PX AND 700PX @MEDIA TO ONE TO REDUCE REPETITION
+ 
+
 */
 
 html, body, div, span, applet, object, iframe,
@@ -26,7 +34,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -66,7 +73,7 @@ table {
   font-size: 16px;
 }
 
-*{
+html, body{
   line-height: 1.35;
   font-family: var(--body-font);
   color: var(--dark-gray);
@@ -86,6 +93,7 @@ table {
   position:static;
   width:auto;
   height:auto;
+  outline: 2px solid var(--light-green);
 }
 
 header, footer{
@@ -289,13 +297,22 @@ header img{
   }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px), (min-width: 700px) {
   #aboutPlants div{
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     max-width: 680px;
     margin: 0 auto;
+  }
+    footer div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        max-width: 700px;
+        margin: 0 auto;
+      }
   }
   
   #contactUs div{

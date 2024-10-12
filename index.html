@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="mystyle.css">
 
         <!-- Short description of your document's subject -->
-        <meta name="subject" content="your document's subject">
+        <meta name="subject" content="Garden center and plant nursery">
 
 
 
@@ -32,8 +32,15 @@
 
         <!-- HTML5 shiv -->
         <!--[if lt IE 9]>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        ERROR 1 - REMOVE OBSOLETE SCRIPT TAG
+        ERROR 2 - NOTE THE # FOR LINKS IS A PLACEHOLDER, NEED TO REPLACE WITH ACTUAL LINKS
+        ERROR 3 - REPLACED CAPITAL <P> TAG WITH <p> tags
+        ADDED ARIA ELEMENT ROLE MAIN NAVIGATION TO THE NAV ELEMENT
+        ADDED ARIA ELEMENT ROLE CONTENT INFO TO THE FOOTER ELEMENT 
+        ADDED CLASS mainNavigation TO THE H2 ELEMENT WITHIN THE NAV 
+        REPLACED META NAME IN SUBJECT WITH CORRECT CONTENT LABEL
         
+
         <![endif]-->
 
         <!-- Link to CSS -->
@@ -44,8 +51,8 @@
         <header>
             <h1>The Secret Garden</h1>
             <a href="#" id="logo"><img src="https://www.public.asu.edu/~jlbarn11/teaching/leafLogo.png" alt="The Secret Garden logo is a layered seedling in two shades of green"></a>
-            <nav>
-                <h2 class="hidden">Main Navigation</h2>
+            <nav aria-label="Main Navigation">
+                <h2 class="hidden mainNavigation">Main Navigation</h2>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">Plants</a></li>
@@ -65,7 +72,7 @@
                     <div>
                         <h3>Learn About Our Plants</h3>
                         <a href="#"><img src="https://www.public.asu.edu/~jlbarn11/teaching/plantChat.png" alt="speech bubble graphic with flower graphic inside of it"></a>
-                        <P>We offer native plants in many varieties! Our professional staff are here to help seven days a week, let them show you how to make your garden beautiful!</P>
+                        <p>We offer native plants in many varieties! Our professional staff are here to help seven days a week, let them show you how to make your garden beautiful!</p>
                     </div>
                 </section>
                 <section id="contactUs">
